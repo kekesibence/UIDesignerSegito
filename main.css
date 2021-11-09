@@ -1,5 +1,5 @@
 #inputok {
-    background-color: lightgray;
+    background-color: #D3D3D3;
     padding:1%;
     border-radius: 8px;
     display: block;
@@ -24,6 +24,11 @@ input {
     width: 50%;
     margin-right: auto;
     margin-left: auto;
+}
+
+#elonezet {
+    padding:1%;
+    border-radius: 8px;
 }
 
 
