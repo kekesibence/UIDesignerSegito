@@ -1,0 +1,29 @@
+#inputok {
+    background-color: lightgray;
+    padding:1%;
+    border-radius: 8px;
+    display: block;
+    align-items: center;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+input {
+    width: 100%;
+    align-self: center;
+}
+
+.input {
+    margin-bottom: 3%;
+}
+
+#elonezetek {
+    padding:1%;
+    border-radius: 8px;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
