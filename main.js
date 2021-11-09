@@ -4,49 +4,40 @@ var betuMeretInput;
 var betuSzinInput;
 var hatterSzinInput;
 
-var mintaSzoveg;
-var betuMeret;
-var betuSzin;
-var hatterSzin;
 
 function init() {
     mintaSzovegInput = document.getElementById('mintaSzoveg');
-    mintaSzoveg = mintaSzovegInput.value;
-    betuMeretInput =document.getElementById('betuMeret');
-    betuMeret = betuMeretInput.value;
+    betuMeretInput = document.getElementById('betuMeret');
     betuSzinInput = document.getElementById('betuSzin');
-    betuSzin = betuSzinInput.value;
     hatterSzinInput = document.getElementById('hatterSzin');
-    hatterSzin = hatterSzinInput.value;
-    document.getElementById('elonezet').innerHTML = mintaSzoveg;
+    document.getElementById('elonezet').innerHTML = mintaSzovegInput.value;
     mintaSzovegInput.addEventListener("input", szovegValtozas); 
-    document.getElementById('elonezet').style.fontSize = betuMeret + "pt";
+    document.getElementById('elonezet').style.fontSize = betuMeretInput.value + "pt";
     betuMeretInput.addEventListener("input", betuMeretValtozas);
     betuSzinInput.addEventListener("input", betuSzinValtozas);
     hatterSzinInput.addEventListener("input", hatterSzinValtozas);
+    document.getElementById('alaphelyzet').addEventListener("click", alaphelyzetbeAllitas);
 }
 
 function szovegValtozas() {
-    mintaSzoveg = mintaSzovegInput.value;
-    document.getElementById('elonezet').innerHTML = mintaSzoveg;
+    document.getElementById('elonezet').innerHTML = mintaSzovegInput.value;
 }
 
 function betuMeretValtozas() {
-    betuMeret = betuMeretInput.value;
-    document.getElementById('elonezet').style.fontSize = betuMeret + "pt";
-    console.log(betuMeret);
+    document.getElementById('elonezet').style.fontSize = betuMeretInput.value + "pt";
 }
 
 function betuSzinValtozas() {
-    betuSzin = betuSzinInput.value;
-    document.getElementById('elonezet').style.color = betuSzin;
-    console.log(betuSzin);
+    document.getElementById('elonezet').style.color = betuSzinInput.value;
 }
 
 function hatterSzinValtozas() {
-    hatterSzin = hatterSzinInput.value;
-    document.getElementById('elonezet').style.backgroundColor = hatterSzin;
-    console.log(hatterSzin);
+    document.getElementById('elonezet').style.backgroundColor = hatterSzinInput.value;
+}
+
+function alaphelyzetbeAllitas() {
+    document.getElementById('mintaSzoveg').reset();
+
 }
 
 document.addEventListener('DOMContentLoaded', init);
