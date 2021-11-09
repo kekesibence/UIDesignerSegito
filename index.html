@@ -14,18 +14,22 @@
             <div class="input">
                 Mintaszöveg:<br>
                 <input type="text" id="mintaSzoveg" value="Árvíztűrő tükörfúrógép">
+                <p id="textHibaUzenet">A szöveg nem lehet üres</p>
             </div>
             <div class="input">
                 Betüméret:<br>
-                <input type="number" id="betuMeret" value="12">
+                <input type="number" id="betuMeret" value="12" min="1">
+                <p></p>
             </div>
             <div class="input">
                 Szövegszín<br>
                 <input type="color" id="betuSzin" value="#000000">
+                <p></p>
             </div>
             <div class="input">
                 Háttérszín<br>
                 <input type="color" id="hatterSzin" value="#ffffff">
+                <p></p>
             </div>
             <button id="alaphelyzet">Alaphelyzet</button>
         </form>

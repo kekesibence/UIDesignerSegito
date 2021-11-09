@@ -9,6 +9,21 @@
     margin-left: auto;
 }
 
+#textHibaUzenet {
+    color: #d3d3d3;
+    padding: 0%;
+    margin: 0%;
+}
+#betuHibaUzenet {
+    color: #d3d3d3;
+    padding: 0%;
+    margin: 0%;
+}
+
+.error {
+    color: red;
+}
+
 input {
     width: 100%;
     align-self: center;
